@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Profile {
+  id             String   @id @default(uuid())
+  name           Json     // jsonb für Name-Struktur (required)
+  gender         String?  // Optional
+  relationship   Json?    // Optional, jsonb für Beziehungsinformationen
+  occasions      Json?    // Optional, jsonb für Termine/Anlässe
+  preferences    Json?    // Optional, jsonb für Präferenzen
+  notifications  Json?    // jsonb für Benachrichtigungseinstellungen
+  history        Json?    // jsonb für Verlauf/Historie
+  additionalInfo Json?    // jsonb für optionale Zusatzinformationen
+  userId         String?  // Optional für Benutzer-Zuordnung
+  known_since    String?
+  createdAt      DateTime @default(now()) @map("created_at")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

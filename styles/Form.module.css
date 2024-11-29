@@ -1,0 +1,24 @@
+.input {
+  @apply w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500;
+}
+
+.select {
+  @apply w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white;
+}
+
+.radioInput {
+  @apply h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500;
+}
+
+.checkbox {
+  @apply h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500;
+}
+
+.button {
+  @apply w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors;
+}
+
+.error {
+  @apply text-red-600 text-sm mt-1;
+}
+

@@ -1,0 +1,33 @@
+{
+  "name": "giftlyai",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.1.5",
+    "@prisma/client": "^5.21.1",
+    "@supabase/supabase-js": "^2.46.1",
+    "amazon-paapi": "^1.0.7",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "cross-fetch": "^4.0.0",
+    "date-fns": "^4.1.0",
+    "next": "^15.0.1",
+    "next-auth": "^4.24.10",
+    "openai": "^4.67.3",
+    "react": "^18.3.1",
+    "react-datepicker": "^7.5.0",
+    "react-dom": "^18.3.1",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "prisma": "^5.21.1",
+    "tailwindcss": "latest"
+  }
+}
